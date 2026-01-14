@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Origin from "@/components/Origin";
 import ForYouBlueprints from "@/components/ForYouBlueprints";
+import Boundaries from "@/components/Boundaries";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <Navbar />
       <Origin />
       <ForYouBlueprints />
-      {/* Additional sections will be added here */}
+      <Boundaries />
     </main>
   );
 }
