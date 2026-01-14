@@ -68,6 +68,7 @@ export default function Boundaries() {
             </div>
           </div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}
