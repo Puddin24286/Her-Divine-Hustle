@@ -2,15 +2,36 @@
 
 import Link from "next/link";
 
+/**
+ * BOUNDARIES SECTION
+ *
+ * STRUCTURE REQUIREMENTS - DO NOT MODIFY:
+ * - This is a standalone <section id="boundaries">
+ * - Final section on the page
+ * - Do NOT merge with or nest inside other sections (especially ForYouBlueprints)
+ * - Do NOT move the closing row outside this section
+ *
+ * LAYOUT:
+ * - Editorial content area (to be added above)
+ * - Closing row at bottom (locked - do not modify layout)
+ *   - Desktop: horizontal layout (text/button left, social icons right, vertically centered)
+ *   - Mobile: stacked layout (text/button first, icons below)
+ */
 export default function Boundaries() {
   return (
-    <section id="boundaries" className="relative py-20 px-6 md:py-32 md:px-8 lg:px-12">
-      <div className="max-w-[80rem] mx-auto">
+    <section id="boundaries" className="relative py-28 px-6 md:py-32 md:px-8 lg:py-36 lg:px-36">
+      <div className="max-w-[72rem] mx-auto">
 
-        {/* Editorial content will go here */}
+        {/* ============================================
+            EDITORIAL CONTENT AREA
+            Editorial content will be added here
+            ============================================ */}
 
-        {/* Closing Row */}
-        <div className="mt-24 pt-12 border-t border-white/10">
+        {/* ============================================
+            CLOSING ROW - DO NOT MODIFY LAYOUT
+            Locked structure: text/button + social icons
+            ============================================ */}
+        <div className="mt-20 pt-12 border-t border-white/10">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             {/* Left: Text + Button */}
             <div>
