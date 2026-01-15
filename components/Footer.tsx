@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 /**
  * FOOTER COMPONENT
  *
  * Minimal footer that sits below Boundaries section
- * Contains copyright and social icons
+ * Contains copyright, contact link, and social icons
  * Visually recedes with muted styling
  * NO calls to action
  */
@@ -10,10 +12,18 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/5 py-12 px-6 md:px-8 lg:px-36">
       <div className="max-w-[72rem] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* Copyright */}
-        <p className="text-xs text-white/40">
-          © {new Date().getFullYear()} Her Divine Hustle Co.
-        </p>
+        {/* Left: Copyright + Contact */}
+        <div className="flex flex-col items-center md:items-start gap-2">
+          <p className="text-xs text-white/40">
+            © {new Date().getFullYear()} Her Divine Hustle Co.
+          </p>
+          <Link
+            href="/contact"
+            className="text-xs text-white/40 hover:text-white/70 transition"
+          >
+            Contact
+          </Link>
+        </div>
 
         {/* Social Icons - Muted */}
         <div className="flex items-center gap-6">
