@@ -3,17 +3,21 @@
 import Link from "next/link";
 
 /**
- * BOUNDARIES SECTION
+ * BOUNDARIES SECTION - LOCKED
  *
  * STRUCTURE REQUIREMENTS - DO NOT MODIFY:
  * - This is a standalone <section id="boundaries">
- * - Final section on the page
- * - Do NOT merge with or nest inside other sections (especially ForYouBlueprints)
+ * - Centered editorial moment with ONE CTA
+ * - Do NOT add additional rows, icons, or footer elements to this section
+ * - Do NOT merge with or nest inside other sections
+ * - This section is COMPLETE as-is
  *
- * LAYOUT:
- * - Centered pause: Editorial content vertically and horizontally centered
- * - Intentional empty space above and below
+ * LAYOUT (LOCKED):
+ * - Single centered editorial moment
+ * - Vertically and horizontally centered content
+ * - One button: "Join the Coven" (scrolls to #join)
  * - Full viewport height (min-h-screen) for breathing room
+ * - Intentional empty space above and below
  */
 export default function Boundaries() {
   return (
@@ -42,10 +46,10 @@ export default function Boundaries() {
             </p>
           </div>
 
-          {/* Join the Coven Button */}
+          {/* Join the Coven Button - Scrolls to #join */}
           <div className="mt-12">
             <Link
-              href="#"
+              href="#join"
               className="inline-block px-8 py-3 border border-gold/60 text-gold hover:bg-gold hover:text-obsidian transition-all duration-300 text-sm tracking-wider uppercase"
             >
               Join the Coven
