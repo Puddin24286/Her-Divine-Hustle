@@ -24,8 +24,26 @@ export default function Boundaries() {
 
         {/* ============================================
             EDITORIAL CONTENT AREA
-            Editorial content will be added here
             ============================================ */}
+        <div className="max-w-3xl">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-normal text-off-white mb-8">
+            Boundaries Are the Architecture of Power.
+          </h2>
+
+          <div className="space-y-6 text-lg md:text-xl text-off-white/80 font-light leading-relaxed">
+            <p>
+              Boundaries are not walls. They are the gates that decide what enters your nervous system, your calendar, and your calling.
+            </p>
+
+            <p>
+              Without them, ambition leaks. With them, your energy compounds.
+            </p>
+
+            <p>
+              This is where over-functioning ends and intentional expansion begins.
+            </p>
+          </div>
+        </div>
 
         {/* ============================================
             CLOSING ROW - DO NOT MODIFY LAYOUT
