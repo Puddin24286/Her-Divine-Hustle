@@ -45,7 +45,7 @@ export default function Hero() {
                 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold leading-tight tracking-tight mb-6"
               >
                 <span className="text-gradient-gold-animated">
-                  HER DIVINE HUSTLE CO.
+                  A sanctuary for the ambitious woman.
                 </span>
               </motion.h1>
 
@@ -56,7 +56,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
                 className="text-lg md:text-xl lg:text-2xl text-off-white/90 leading-relaxed max-w-3xl mb-10 font-light"
               >
-                The Sanctuary for the Ambitious. Reclaim, Scale Your Empire.
+                Reclaim your nervous system. Scale your empire. On your terms.
               </motion.p>
 
               {/* CTA Button */}
