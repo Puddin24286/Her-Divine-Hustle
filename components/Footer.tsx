@@ -10,19 +10,36 @@ import Link from "next/link";
  */
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 py-12 px-6 md:px-8 lg:px-36">
-      <div className="max-w-[72rem] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* Left: Copyright + Contact */}
-        <div className="flex flex-col items-center md:items-start gap-2">
-          <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} Her Divine Hustle Co.
+    <footer className="pt-24 pb-16 px-6 md:px-8 lg:px-36">
+      <div className="max-w-[72rem] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        {/* Left: Brand Message + Links */}
+        <div className="flex flex-col items-center md:items-start gap-4">
+          <p className="text-base text-white/50 font-light leading-relaxed text-center md:text-left">
+            Built with intention.<br />
+            Held with care.
           </p>
-          <Link
-            href="/contact"
-            className="text-xs text-white/40 hover:text-white/70 transition"
-          >
-            Contact
-          </Link>
+          <div className="flex flex-col md:flex-row items-center gap-3 text-xs">
+            <Link
+              href="/"
+              className="text-white/30 hover:text-white/60 transition"
+            >
+              Return to center
+            </Link>
+            <span className="hidden md:inline text-white/10">·</span>
+            <Link
+              href="#origin"
+              className="text-white/30 hover:text-white/60 transition"
+            >
+              Read the story
+            </Link>
+            <span className="hidden md:inline text-white/10">·</span>
+            <Link
+              href="/contact"
+              className="text-white/30 hover:text-white/60 transition"
+            >
+              Contact
+            </Link>
+          </div>
         </div>
 
         {/* Social Icons - Muted */}
@@ -32,7 +49,7 @@ export default function Footer() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/40 hover:text-white/70 transition"
+            className="text-white/30 hover:text-white/60 transition"
             aria-label="Instagram"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -45,7 +62,7 @@ export default function Footer() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/40 hover:text-white/70 transition"
+            className="text-white/30 hover:text-white/60 transition"
             aria-label="TikTok"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -58,7 +75,7 @@ export default function Footer() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/40 hover:text-white/70 transition"
+            className="text-white/30 hover:text-white/60 transition"
             aria-label="Pinterest"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

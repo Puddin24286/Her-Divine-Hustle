@@ -15,47 +15,30 @@ export default function Origin() {
 
       <div className="section-container">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Section Label */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6 }}
-            className="mb-6"
-          >
-            <span className="inline-block px-4 py-2 text-sm font-semibold tracking-widest uppercase text-gold border border-gold/30 rounded-full backdrop-blur-sm bg-gold/5">
-              The Origin Story
-            </span>
-          </motion.div>
-
           {/* Main Heading */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-tight"
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-12 leading-tight"
           >
-            From the{" "}
-            <span className="text-off-white">Corporate Grind</span>
-            <br />
-            to the{" "}
-            <span className="text-gradient-gold">Divine Hustle</span>
+            <span className="text-off-white">This is not hustle culture.</span>
           </motion.h2>
 
-          {/* Story Content */}
+          {/* Body Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6 text-lg md:text-xl text-off-white/80 leading-relaxed font-light"
           >
             <p>
-              You've climbed the corporate ladder. You've earned the title, the corner office, the respect. But somewhere along the way, you lost yourself in someone else's vision.
+              There is another way to build.<br />
+              One rooted in intention, rhythm, and trust.
             </p>
             <p>
-              You're tired of trading your energy for someone else's empire. You're ready to build something that actually means something—to you, on your terms, aligned with your values.
-            </p>
-            <p className="text-gold/90 font-normal">
-              This is where the divine hustle begins.
+              Here, ambition is not something to outrun yourself for.<br />
+              It is something you tend.
             </p>
           </motion.div>
 

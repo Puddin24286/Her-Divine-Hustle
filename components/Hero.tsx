@@ -56,17 +56,20 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
                 className="text-lg md:text-xl lg:text-2xl text-off-white/90 leading-relaxed max-w-3xl mb-10 font-light"
               >
-                Reclaim your nervous system. Scale your empire. On your terms.
+                Where devotion and discipline meet.<br />
+                Where your work is treated as sacred.
               </motion.p>
 
-              {/* CTA Button */}
+              {/* CTA Buttons */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
+                className="flex flex-col sm:flex-row gap-4"
               >
-                <Link href="#blueprints" className="btn-primary group">
-                  Explore the Blueprints
+                {/* Primary CTA */}
+                <Link href="#join" className="btn-primary group">
+                  Enter the sanctuary
                   <svg
                     className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                     fill="none"
@@ -81,6 +84,14 @@ export default function Hero() {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
+                </Link>
+
+                {/* Secondary CTA */}
+                <Link
+                  href="#origin"
+                  className="inline-flex items-center justify-center px-8 py-3 border border-white/30 text-off-white hover:border-white/60 hover:bg-white/5 transition-all duration-300 text-sm tracking-wider uppercase"
+                >
+                  Read the story
                 </Link>
               </motion.div>
             </div>
