@@ -45,7 +45,7 @@ export default function Hero() {
                 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold leading-tight tracking-tight mb-6"
               >
                 <span className="text-gradient-gold-animated">
-                  A sanctuary for the ambitious woman.
+                  A Sanctuary for Ambitious Women.
                 </span>
               </motion.h1>
 
@@ -54,24 +54,34 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-                className="text-lg md:text-xl lg:text-2xl text-off-white/90 leading-relaxed max-w-3xl mb-10 font-light"
+                className="text-xl md:text-2xl lg:text-3xl text-off-white/90 leading-relaxed max-w-3xl mb-6 font-light"
               >
-                Where devotion and discipline meet.<br />
-                Where your work is treated as sacred.
+                You didn't lose your drive.<br />
+                You outgrew the systems that demanded too much of it.
               </motion.p>
 
-              {/* CTA Buttons */}
+              {/* Supporting Lines */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                className="text-sm md:text-base text-off-white/70 leading-relaxed max-w-2xl mb-10 font-light"
+              >
+                Here, success is built with intention.<br />
+                Boundaries become power.<br />
+                And ambition expands without burning out your nervous system.
+              </motion.p>
+
+              {/* Primary CTA */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
-                className="flex flex-col sm:flex-row gap-4"
+                transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
               >
-                {/* Primary CTA */}
-                <Link href="#join" className="btn-primary group">
-                  Enter the sanctuary
+                <Link href="#blueprints" className="btn-primary group">
+                  Explore the Blueprints
                   <svg
-                    className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                    className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 hidden md:inline-block"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -84,14 +94,6 @@ export default function Hero() {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </Link>
-
-                {/* Secondary CTA */}
-                <Link
-                  href="#origin"
-                  className="inline-flex items-center justify-center px-8 py-3 border border-white/30 text-off-white hover:border-white/60 hover:bg-white/5 transition-all duration-300 text-sm tracking-wider uppercase"
-                >
-                  Read the story
                 </Link>
               </motion.div>
             </div>

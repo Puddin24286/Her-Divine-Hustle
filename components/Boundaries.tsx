@@ -7,6 +7,7 @@ import Link from "next/link";
  *
  * STRUCTURE REQUIREMENTS - DO NOT MODIFY:
  * - This is a standalone <section id="boundaries">
+ * - Acts as the EMOTIONAL FOOTER of the homepage
  * - Centered editorial moment with ONE CTA
  * - Do NOT add additional rows, icons, or footer elements to this section
  * - Do NOT merge with or nest inside other sections
@@ -15,9 +16,14 @@ import Link from "next/link";
  * LAYOUT (LOCKED):
  * - Single centered editorial moment
  * - Vertically and horizontally centered content
- * - One button: "Join the Coven" (scrolls to #join)
+ * - One button: "Join the Coven" (opens /join page, NOT a scroll)
  * - Full viewport height (min-h-screen) for breathing room
  * - Intentional empty space above and below
+ *
+ * MOBILE:
+ * - No directional arrows on CTA
+ * - Copy remains identical to desktop
+ * - Technical footer (copyright + contact) sits below this section
  */
 export default function Boundaries() {
   return (
@@ -46,10 +52,10 @@ export default function Boundaries() {
             </p>
           </div>
 
-          {/* Join the Coven Button - Scrolls to #join */}
+          {/* Join the Coven Button - Opens join page */}
           <div className="mt-12">
             <Link
-              href="#join"
+              href="/join"
               className="inline-block px-8 py-3 border border-gold/60 text-gold hover:bg-gold hover:text-obsidian transition-all duration-300 text-sm tracking-wider uppercase"
             >
               Join the Coven

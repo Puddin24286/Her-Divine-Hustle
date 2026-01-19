@@ -1,38 +1,65 @@
 import Link from "next/link";
 
 /**
- * FOOTER COMPONENT
+ * FOOTER COMPONENT - TECHNICAL FOOTER
  *
- * Minimal footer that sits below Boundaries section
- * Contains copyright, contact link, and social icons
- * Visually recedes with muted styling
- * NO calls to action
+ * Minimal footer that sits below Boundaries section (the emotional footer)
+ *
+ * MOBILE (LOCKED):
+ * - Copyright only: "© Year Her Divine Hustle Co."
+ * - Contact link only
+ * - NO brand messaging, NO navigation links, NO social icons
+ * - Keep it minimal and functional
+ *
+ * DESKTOP:
+ * - Brand message: "Built with intention. Held with care."
+ * - Navigation links: Return to center, Read the story, Contact
+ * - Social icons (Instagram, TikTok, Pinterest)
+ * - All elements muted and visually recessive
+ *
+ * NO calls to action, NO promotional language
  */
 export default function Footer() {
   return (
     <footer className="pt-24 pb-16 px-6 md:px-8 lg:px-36">
       <div className="max-w-[72rem] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-        {/* Left: Brand Message + Links */}
+        {/* Left: Copyright + Contact (Mobile: minimal, Desktop: full) */}
         <div className="flex flex-col items-center md:items-start gap-4">
-          <p className="text-base text-white/50 font-light leading-relaxed text-center md:text-left">
+          {/* Brand Message - Desktop Only */}
+          <p className="hidden md:block text-base text-white/50 font-light leading-relaxed text-center md:text-left">
             Built with intention.<br />
             Held with care.
           </p>
-          <div className="flex flex-col md:flex-row items-center gap-3 text-xs">
+
+          {/* Mobile: Simple copyright + contact */}
+          <div className="flex flex-col md:hidden items-center gap-2 text-xs">
+            <p className="text-white/40">
+              © {new Date().getFullYear()} Her Divine Hustle Co.
+            </p>
+            <Link
+              href="/contact"
+              className="text-white/30 hover:text-white/60 transition"
+            >
+              Contact
+            </Link>
+          </div>
+
+          {/* Desktop: Full navigation */}
+          <div className="hidden md:flex md:flex-row items-center gap-3 text-xs">
             <Link
               href="/"
               className="text-white/30 hover:text-white/60 transition"
             >
               Return to center
             </Link>
-            <span className="hidden md:inline text-white/10">·</span>
+            <span className="text-white/10">·</span>
             <Link
               href="#origin"
               className="text-white/30 hover:text-white/60 transition"
             >
               Read the story
             </Link>
-            <span className="hidden md:inline text-white/10">·</span>
+            <span className="text-white/10">·</span>
             <Link
               href="/contact"
               className="text-white/30 hover:text-white/60 transition"
@@ -42,8 +69,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Social Icons - Muted */}
-        <div className="flex items-center gap-6">
+        {/* Social Icons - Desktop Only */}
+        <div className="hidden md:flex items-center gap-6">
           {/* Instagram */}
           <a
             href="#"

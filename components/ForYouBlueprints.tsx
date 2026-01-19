@@ -10,7 +10,7 @@ export default function ForYouBlueprints() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="relative py-20 px-6 md:py-32 md:px-8 lg:px-12">
+    <section id="blueprints" ref={ref} className="relative py-20 px-6 md:py-32 md:px-8 lg:px-12">
       <div className="max-w-[80rem] mx-auto">
         {/* Two-column layout on desktop, stacked on mobile */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
