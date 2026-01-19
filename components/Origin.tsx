@@ -30,15 +30,16 @@ export default function Origin() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6 text-lg md:text-xl text-off-white/80 leading-relaxed font-light"
+            className="space-y-4 md:space-y-6 text-lg md:text-xl leading-relaxed font-light"
           >
-            <p>
-              There is another way to build.<br />
-              One rooted in intention, rhythm, and trust.
+            <p className="text-gradient-gold-animated">
+              Here, success is built with intention.
             </p>
-            <p>
-              Here, ambition is not something to outrun yourself for.<br />
-              It is something you tend.
+            <p className="text-gradient-gold-animated">
+              Boundaries become power.
+            </p>
+            <p className="text-gradient-gold-animated">
+              And ambition expands without burning out your nervous system.
             </p>
           </motion.div>
 
